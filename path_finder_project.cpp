@@ -143,7 +143,7 @@ vector<pair<int,int>> neighbours(const pair<int,int> &pos, const vector<vector<c
 }
 
 vector<pair<int,int>> maze_solver(const string &map) {
-    /* Solve ice maze using Dijkstra's algorithm and represent each position in the maze 
+    /* Solve maze using Dijkstra's algorithm and represent each position in the maze 
     as a vertex defined in struct Vertex. Takes an ice maze map in the form of a string. */
     
     vector<vector<char>> grid; // To store map as a 2D vector of chars for convinience.
@@ -340,7 +340,7 @@ int main() {
                   "#   x         #          x##   ##\n"
                   "  ##  x  xx #         x  #       ";
 
-    // Solve the ice maze and find the minimum step path.
+    // Solve the mazes and find the minimum step paths.
     vector<pair<int,int>> path1 = maze_solver(map1);
     vector<pair<int,int>> path2 = maze_solver(map2);
 
